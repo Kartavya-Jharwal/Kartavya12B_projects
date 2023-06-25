@@ -27,6 +27,13 @@ body {
 	line-height: 1;
 }
 
+
+
+#logo {
+	margin-bottom: 1em; /* Add some spacing between logo and buttons */
+}
+
+
 ol, ul {
 	list-style: none;
 }
@@ -2013,7 +2020,10 @@ input, select, textarea {
 
 	#nav {
 		margin: 2.5em 0 0 0;
-		text-align: right;
+		display: flex;
+		flex-direction: column; /* Align items vertically in a column */
+		align-items: center; /
+    	
 	}
 
 		#nav > ul {
@@ -2111,6 +2121,7 @@ input, select, textarea {
 		position: relative;
 		padding: 8em 0;
 		margin: 4em 0 0 0;
+		
 	}
 
 		#banner header {
@@ -2753,6 +2764,7 @@ input, select, textarea {
 			#banner {
 				padding: 6em 0;
 				margin: 2em 0 0 0;
+				overflow: visible;
 			}
 
 				#banner header {
@@ -2808,3 +2820,55 @@ html {
 	
 }
 
+.boxfooter {
+	background: #4d4d4d;
+	padding: 25px 15px 20px 15px;
+	border-radius: 20px;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+  }
+  
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: #00cc00;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+  }
+  
+  .tooltip.shake .tooltiptext {
+	animation: shake 0.5s;
+  }
+  
+  .tooltip.red .tooltiptext {
+	background-color: #cc0000;
+  }
+  
+  .tooltip.red.shake .tooltiptext {
+	animation: shake-red 0.5s;
+  }
+  
+  @keyframes shake {
+	0%, 100% { transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+	20%, 40%, 60%, 80% { transform: translateX(5px); }
+  }
+  
+  @keyframes shake-red {
+	0%, 100% { transform: translateX(0) rotate(0); }
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-5px) rotate(-10deg); }
+	20%, 40%, 60%, 80% { transform: translateX(5px) rotate(10deg); }
+  }
