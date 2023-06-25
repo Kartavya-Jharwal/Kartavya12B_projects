@@ -84,7 +84,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #252122;
+		background: #090909;
 		background-image: url("images/bg02.png");
 	}
 
@@ -1446,7 +1446,7 @@ input, select, textarea {
 
 	form label {
 		display: block;
-		color: #252122;
+		color: #191970;
 		font-weight: 400;
 		margin: 0 0 0.5em 0;
 	}
@@ -1551,11 +1551,10 @@ input, select, textarea {
 		header.major {
 			position: relative;
 			text-align: center;
-			border-top: solid 1px #000000;
+			border-top: solid 1px #616161;
 			top: 1em;
 			margin: 0 0 3em 0;
 		}
-
 			header.major h2 {
 				background: #000000;
 				position: relative;
@@ -1652,7 +1651,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #252122;
+			background: #191970;
 		}
 
 			input[type="button"].alt:hover,
@@ -1994,11 +1993,11 @@ input, select, textarea {
 			}
 
 			.icon.featured.alt {
-				background-color: #252122;
+				background-color: #191970;
 			}
 
 				.icon.featured.alt:after {
-					border-top-color: #252122;
+					border-top-color: #191970;
 				}
 
 			.icon.featured.alt2 {
@@ -2064,7 +2063,7 @@ input, select, textarea {
 
 	.dropotron {
 		border-radius: 5px;
-		background-color: #252122;
+		background-color: #191970;
 		background-color: rgba(34, 30, 31, 0.98);
 		padding: 1.25em 1.5em 1.25em 1.5em;
 		font-style: italic;
@@ -2106,16 +2105,16 @@ input, select, textarea {
 				top: -9px;
 				border-left: solid 10px transparent;
 				border-right: solid 10px transparent;
-				border-bottom: solid 10px #252122;
+				border-bottom: solid 10px #191970;
 				border-bottom-color: rgba(34, 30, 31, 0.98);
 			}
 
 /* Banner */
 
 	#banner {
-		background: #cce8f4 url("images\\pic01.png");
+		background: #1E3B41 url("../../images/Banner/Bg4.png");
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: cover;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
@@ -2125,21 +2124,21 @@ input, select, textarea {
 	}
 
 		#banner header {
-			background-color: rgba(34, 30, 31, 0.98);
+			background-color:#142521;
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 50px;
 		}
 
 			#banner header h2 {
-				color: #fff;
+				color: #9DF3C4;
 				font-weight: 700;
 				font-size: 2.5em;
 				margin: 0 0 0.65em 0;
 			}
 
 			#banner header p {
-				color: #1FAB89;
+				color: #9DF3C4;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
@@ -2168,14 +2167,15 @@ input, select, textarea {
 		}
 
 		#main .major h2 {
-			background: #74fff3 url("images/bg02.png");
+			border-radius: 50px;
+			background: #48a89b url("images/bg02.png");
 		}
 
 /* Footer */
 
 	#footer {
 		position: relative;
-		color: #858484;
+		color: #ffffff;
 		padding: 4em 0;
 	}
 
@@ -2192,7 +2192,7 @@ input, select, textarea {
 		}
 
 		#footer a {
-			color: #c5c4c4;
+			color: #ffffff;
 		}
 
 		#footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b {
@@ -2738,7 +2738,7 @@ input, select, textarea {
 			}
 
 				#header h2 {
-					color: #252122;
+					color: #171819;
 					font-weight: 900;
 					font-size: 1.75em;
 					letter-spacing: -0.035em;
@@ -2821,54 +2821,18 @@ html {
 }
 
 .boxfooter {
-	background: #4d4d4d;
-	padding: 25px 15px 20px 15px;
+	background: #282828;
+	padding: 15px 10px 10px 10px;
 	border-radius: 20px;
 }
 
-.tooltip {
-	position: relative;
-	display: inline-block;
-	cursor: pointer;
+@media screen and (min-width: 1000px) {
+	.centered-div {
+	  display: inline-block;
+	  vertical-align: top;
+	  width: calc(33.33% - 20px);
+	  padding: 0 10px;
+	  box-sizing: border-box;
+	}
   }
   
-  .tooltip .tooltiptext {
-	visibility: hidden;
-	width: 120px;
-	background-color: #00cc00;
-	color: #fff;
-	text-align: center;
-	padding: 5px;
-	border-radius: 6px;
-	position: absolute;
-	z-index: 1;
-	bottom: 125%;
-	left: 50%;
-	margin-left: -60px;
-	opacity: 0;
-	transition: opacity 0.3s;
-  }
-  
-  .tooltip.shake .tooltiptext {
-	animation: shake 0.5s;
-  }
-  
-  .tooltip.red .tooltiptext {
-	background-color: #cc0000;
-  }
-  
-  .tooltip.red.shake .tooltiptext {
-	animation: shake-red 0.5s;
-  }
-  
-  @keyframes shake {
-	0%, 100% { transform: translateX(0); }
-	10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
-	20%, 40%, 60%, 80% { transform: translateX(5px); }
-  }
-  
-  @keyframes shake-red {
-	0%, 100% { transform: translateX(0) rotate(0); }
-	10%, 30%, 50%, 70%, 90% { transform: translateX(-5px) rotate(-10deg); }
-	20%, 40%, 60%, 80% { transform: translateX(5px) rotate(10deg); }
-  }
