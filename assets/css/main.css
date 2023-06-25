@@ -2032,7 +2032,7 @@ input, select, textarea {
 
 				#nav > ul > li > a {
 					border-radius: 5px;
-					color: #5d5d5d;
+					color: #5d5d5d48;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
 					-moz-transition: background-color .25s ease-in-out;
@@ -2043,11 +2043,11 @@ input, select, textarea {
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
-					background: #f3f3f3;
+					background: #ffffff;
 				}
 
 				#nav > ul > li.current > a {
-					background: #1FAB89;
+					background: #0fe7b1;
 					color: #fff !important;
 					font-weight: 700;
 				}
@@ -2067,7 +2067,7 @@ input, select, textarea {
 	}
 
 		.dropotron a, .dropotron span {
-			color: #aaa;
+			color: #aaaaaa9c;
 			text-decoration: none;
 			-moz-transition: color .25s ease-in-out;
 			-webkit-transition: color .25s ease-in-out;
@@ -2474,14 +2474,14 @@ input, select, textarea {
 						height: 40px;
 						line-height: 40px;
 						font-size: 18px;
-						color: #fff;
+						color: #e0e0e0;
 						text-align: center;
-						background: rgba(150, 150, 150, 0.75);
+						background: rgba(0, 0, 0, 0.75);
 						border-radius: 5px;
 					}
 
 					#titleBar .toggle:active:before {
-						background-color: #969696;
+						background-color: #0fe7b1;
 					}
 
 			#navPanel {
