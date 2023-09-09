@@ -3557,3 +3557,13 @@ input, select, textarea {
 	background-position: center;
 	background-size: contain;
 }
+
+
+.centered {
+    text-align: center;
+}
+
+.centeredd {
+    display: flex;
+justify-content: center;
+}
