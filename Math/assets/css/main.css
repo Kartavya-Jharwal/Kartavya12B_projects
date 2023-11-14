@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f3f6fa;
+		background: #01204C;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -111,7 +111,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		color: #3fb1a3;
+		color: #02a9b9;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
@@ -133,7 +133,7 @@ input, select, textarea {
 		font-weight: 300;
 		line-height: 1.75em;
 		margin-bottom: 1em;
-		text-transform: uppercase;
+		text-transform: capitalize;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -150,6 +150,10 @@ input, select, textarea {
 	h3 {
 		font-size: 1.15em;
 		letter-spacing: 0.025em;
+	}
+	h5 {
+		font-size: 1em;
+		letter-spacing: 0.012em;
 	}
 
 	sub {
@@ -2327,7 +2331,7 @@ input, select, textarea {
 			letter-spacing: 0.075em;
 			position: absolute;
 			right: 1.5em;
-			text-transform: uppercase;
+			text-transform: capitalize;
 			top: 0.75em;
 		}
 
@@ -2571,13 +2575,13 @@ input, select, textarea {
 					margin: 0;
 					padding-left: 0.05em;
 					position: relative;
-					text-transform: uppercase;
+					text-transform: capitalize;
 				}
 
-			#banner .inner p {
+			#banner .inner p h3{
 				letter-spacing: 0.1em;
 				margin: 0;
-				text-transform: uppercase;
+				text-transform:capitalize;
 			}
 
 				#banner .inner p a {
@@ -2641,7 +2645,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #E8EEF4;
+		background: #0a192d;
 		color: #7c8081;
 		padding: 5em 5em 10em 5em;
 		text-align: center;
@@ -3030,7 +3034,7 @@ input, select, textarea {
 					}
 
 					#navButton .toggle:after {
-						background: rgba(163, 169, 170, 0.75);
+						background: rgba(255, 255, 255, 0.75);
 						border-radius: 2px;
 						content: '';
 						height: 40px;
@@ -3061,7 +3065,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #1c2021;
+				background: #01204C;
 				color: #fff;
 				font-size: 0.8em;
 				letter-spacing: 0.075em;
@@ -3329,6 +3333,7 @@ input, select, textarea {
 				width: 50px;
 				height: 34px;
 				line-height: 34px;
+				color: #000000;
 			}
 
 			#navButton .toggle:after {
