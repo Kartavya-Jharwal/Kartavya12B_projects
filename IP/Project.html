@@ -1,0 +1,609 @@
+<!DOCTYPE HTML>
+
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Hopiteri project - by KJ</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <link href="../IP/assets/css/main.css" rel="stylesheet"/>
+    <link href="../IP/assets/project.css" rel="stylesheet"/>
+    <link href="../IP/images/favicon.ico" rel="icon"/>
+    <noscript><link href="../IP/assets/css/noscript.css" rel="stylesheet"/></noscript>
+</head>
+<body class="is-preload example">
+    
+<!-- Header -->
+    <header id="header">
+        <a class="title" href="../IP/index.html">Kartavya Jharwal</a>
+        <nav>
+            <ul>
+                <li><a class="active" href="../IP/index.html">Home</a></li>
+                <li><a class="active" href="../IP/Practical.html">Practical file</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Wrapper -->
+    <div id="wrapper">
+    <!-- Main -->
+        <section class="wrapper" id="main">
+            <div class="inner">
+                
+                <h1>Hotel Management System Project</h1>
+                <p>Welcome to Hopiteri : a Hotel Management System project! This Python-based system is designed to assist hotel administrators
+                in managing customer information, room bookings, and generating insightful reports. The project incorporates a
+                MySQL database to store and retrieve data efficiently. It includes functionalities such as creating and updating
+                customer details, booking rooms, visualizing booking statistics, and calculating total revenue.</p>
+                
+                <h2 id="project-overview">Project Overview</h2>
+                <p>Hopiteri offers a user-friendly interface for hotel staff to perform essential tasks seamlessly.
+                                                With a variety of features, it aims to streamline operations and enhance the overall customer experience. The
+                                                system utilizes the MySQL database for robust data storage and retrieval, ensuring data integrity and
+                reliability.</p>
+
+                <ul class="toc-list">
+                    <li><a href="#project-overview">Project Overview</a></li>
+                    <li><a href="#key-features">Key Features</a></li>
+                    <li><a href="#technology-stack">Technology Stack</a></li>
+                    <li><a href="#how-to-run">How to Run</a></li>
+                    <li><a href="#database-schema">Database Schema</a></li>
+                    <li class="sub-list">
+                        <ul>
+                            <li><a href="#customers-table">customers Table</a></li>
+                            <li><a href="#bookings-table">bookings Table</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#overview-of-source-code">Overview of Source Code</a></li>
+                    <li class="sub-list">
+                        <ul>
+                            <li><a href="#import-libraries">Import Libraries</a></li>
+                            <li><a href="#connection-establishment">Connection Establishment</a></li>
+                            <li><a href="#table-creation">Table Creation</a></li>
+                            <li><a href="#printing-hotel-details">Printing Hotel Details</a></li>
+                            <li><a href="#customer-creation">Customer Creation</a></li>
+                            <li><a href="#customer-update">Customer Update</a></li>
+                            <li><a href="#viewing-all-customers">Viewing All Customers</a></li>
+                            <li><a href="#room-booking">Room Booking</a></li>
+                            <li><a href="#booking-update">Booking Update</a></li>
+                            <li><a href="#booking-deletion">Booking Deletion</a></li>
+                            <li><a href="#viewing-all-bookings">Viewing All Bookings</a></li>
+                            <li><a href="#room-occupancy-summary">Room Occupancy Summary</a></li>
+                            <li><a href="#calculating-total-revenue">Calculating Total Revenue</a></li>
+                            <li><a href="#visualizing-room-bookings">Visualizing Room Bookings</a></li>
+                            <li><a href="#main-function">Main Function</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#recommendations-for-future-work">Recommendations for Future Work</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                </ul>
+                
+                
+                <h2 id="key-features">Key Features</h2>
+                <ol>
+                    <li><strong>Customer Management:</strong>
+                        <ul>
+                            <li>Create new customer records with relevant details.</li>
+
+                            <li>Update existing customer information for accuracy.</li>
+
+                        </ul>
+                    </li>
+
+                    <li><strong>Room Booking:</strong>
+                        <ul>
+                            <li>Book rooms with specified check-in and check-out dates.</li>
+
+                            <li>Update and delete existing bookings.</li>
+
+                        </ul>
+                    </li>
+
+                    <li><strong>Data Visualization:</strong>
+                        <ul>
+                            <li>Visualize room booking statistics using bar charts.</li>
+
+                            <li>View room occupancy summary to monitor hotel occupancy.</li>
+
+                        </ul>
+                    </li>
+
+                    <li><strong>Financial Reporting:</strong>
+                        <ul>
+                            <li>Calculate and display total revenue generated from room bookings.</li>
+
+                        </ul>
+                    </li>
+
+                </ol>
+                <h2 id="technology-stack">Technology Stack</h2>
+                <ul>
+                <li><strong>Programming Language:</strong> Python</li>
+
+                <li><strong>Database:</strong> MySQL</li>
+
+                <li><strong>Libraries:</strong> mysql.connector, pandas, matplotlib</li>
+
+                </ul>
+                <h2 id="how-to-run">How to Run</h2>
+                <ol>
+                <li>Ensure you have Python installed on your machine.</li>
+
+                <li>Install required libraries using <code>pip install mysql-connector-python pandas matplotlib</code>.</li>
+
+                <li>Set up a MySQL database and update the connection details in the code.</li>
+
+                <li>Run the script using <code>python hotel_management_system.py</code>.</li>
+
+                <li>Follow the on-screen prompts to interact with the system.</li>
+
+                </ol>
+                <h2 id="database-schema">Database Schema</h2>
+                <p>The database schema for Hopiteri consists of two tables: 'customers' and 'bookings'. Below is
+                                                an overview of the schema:</p>
+                <ul>
+                <li><strong>customers:</strong>
+                <ul>
+                <li>id (INT, AUTO_INCREMENT, PRIMARY KEY)</li>
+
+                <li>name (VARCHAR(255))</li>
+
+                <li>email (VARCHAR(255))</li>
+
+                <li>phone (VARCHAR(15))</li>
+
+                </ul>
+                </li>
+
+                <li><strong>bookings:</strong>
+                <ul>
+                <li>id (INT, AUTO_INCREMENT, PRIMARY KEY)</li>
+
+                <li>check_in (DATE)</li>
+
+                <li>check_out (DATE)</li>
+
+                <li>room_type (VARCHAR(50))</li>
+
+                <li>num_guests (INT)</li>
+
+                <li>customer_id (INT, FOREIGN KEY to customers(id))</li>
+
+                <li>total_price (FLOAT)</li>
+
+                </ul>
+                </li>
+
+                </ul>
+                <h2 id="overview-of-source-code">Overview of Source Code</h2>
+                <p>The source code for Hopiteri is organized into functions and sections, providing a modular
+                                                structure. Key components include database connection, table creation, user interface, and various operations
+                                                such as customer and booking management.</p>
+                <h3 id="import-libraries">Import Libraries</h3>
+                <pre><code class="language-python">
+                import mysql.connector
+                import pandas as pd
+                import matplotlib.pyplot as plt
+                from mysql.connector.locales.eng import client_error
+                                            </code></pre>
+                <p>This block imports necessary libraries. </p>
+                <ul>
+                <li><code>mysql.connector</code>: Used for interaction with MySQL databases.</li>
+
+                <li><code>pandas</code>: A data manipulation library, useful for working with tabular data.</li>
+
+                <li><code>matplotlib.pyplot</code>: Enables data visualization through various plotting functions.</li>
+
+                <li><code>client_error</code> from <code>mysql.connector.locales.eng</code>: Provides localization support for MySQL client errors.</li>
+
+                </ul>
+                <h3 id="connection-establishment">Connection Establishment</h3>
+                <pre><code class="language-python">
+                def establish_connection():
+                    return mysql.connector.connect(user='sql12669536',
+                                                    password='**********',
+                                                    host='sql12.freesqldatabase.com',
+                                                    port='3306',
+                                                    database='sql12669536')
+                                            </code></pre>
+                <p>Defines a function <code>establish_connection</code> to connect to a MySQL database using specific credentials (username, password, host, port, and database name).</p>
+                <h3 id="table-creation">Table Creation</h3>
+                <pre><code class="language-python">
+                def create_tables():
+                    global conn, myc
+                    conn = establish_connection()
+                    myc = conn.cursor()
+
+                    # Create customers table
+                    myc.execute("""
+                        CREATE TABLE IF NOT EXISTS customers (
+                            id INT AUTO_INCREMENT PRIMARY KEY,
+                            name VARCHAR(255),
+                            email VARCHAR(255),
+                            phone VARCHAR(15)
+                        )
+                    """)
+                    
+                    # Create bookings table
+                    myc.execute("""
+                        CREATE TABLE IF NOT EXISTS bookings (
+                            id INT AUTO_INCREMENT PRIMARY KEY,
+                            check_in DATE,
+                            check_out DATE,
+                            room_type VARCHAR(50),
+                            num_guests INT,
+                            customer_id INT,
+                            total_price FLOAT,
+                            FOREIGN KEY (customer_id) REFERENCES customers(id)
+                        )
+                    """)
+
+                    conn.commit()
+                                            </code></pre>
+                <ul>
+                <li>Establishes a connection to the database and creates a cursor.</li>
+
+                <li>Defines SQL statements to create 'customers' and 'bookings' tables if they don't exist.</li>
+
+                <li>Commits the changes to the database.</li>
+
+                </ul>
+                <h3 id="printing-hotel-details">Printing Hotel Details</h3>
+                <pre><code class="language-python">
+                def print_hotel_details():
+                    details = "\n" + "-"*50 + f"\n{'Welcome to Hospiteri : a hotel management software':^50}\n{'Your Home Away From Home!':^50}\n" + "-"*50
+                    print(details)
+                                            </code></pre>
+                <p>Generates and prints a welcome message for the hotel in a formatted manner.</p>
+                <h3 id="customer-creation">Customer Creation</h3>
+                <pre><code class="language-python">
+                def create_customer():
+                    print("-"*50)
+                    name = input("Enter customer's name: ")
+                    email = input("Enter customer's email: ")
+                    phone = input("Enter customer's phone number: ")
+                    sql = "INSERT INTO customers (name, email, phone) VALUES ('{}', '{}', '{}')".format(name, email, phone)
+                    myc.execute(sql)
+                    conn.commit()
+                    print("\nExecution successful. Customer created.")
+                    print("-"*50)
+                                            </code></pre>
+                <ul>
+                <li>Takes user input for customer details.</li>
+
+                <li>Constructs an SQL query to insert the customer into the 'customers' table.</li>
+
+                <li>Executes the query and commits the changes.</li>
+
+                </ul>
+                <h3 id="customer-update">Customer Update</h3>
+                <pre><code class="language-python">
+                def update_customer():
+                    print("-"*50)
+                    customer_id = int(input("Enter customer ID to update: "))
+                    new_name = input("Enter new name: ")
+                    new_email = input("Enter new email: ")
+                    new_phone = input("Enter new phone number: ")
+                                            
+                    sql = "UPDATE customers SET name = '{}', email = '{}', phone = '{}' WHERE id = {}".format(
+                    new_name, new_email, new_phone, customer_id)
+                    myc.execute(sql)
+                    conn.commit()
+                    print("\nExecution successful. Customer updated.")
+                    print("-"*50)
+                                            </code></pre>
+                <ul>
+                <li>Takes user input for updating customer details.</li>
+
+                <li>Constructs an SQL query to update the customer in the 'customers' table.</li>
+
+                <li>Executes the query and commits the changes.</li>
+
+                </ul>
+                <h3 id="viewing-all-customers">Viewing All Customers</h3>
+                <pre><code class="language-python">
+                def view_all_customers():
+                    print("-"*50)
+                    print("All Customers\n" + "-"*50)
+                                            
+                    sql = "SELECT * FROM customers"
+                    myc.execute(sql)
+                    data = myc.fetchall()
+                                            
+                    if not data:
+                        print("No customers found.")
+                    else:
+                        columns = [i[0] for i in myc.description]
+                        df = pd.DataFrame(data, columns=columns)
+                        print(df)
+                                            
+                    print("-"*50)
+                                            </code></pre>
+                <ul>
+                <li>Fetches all customer records from the 'customers' table.</li>
+
+                <li>Displays the data using pandas DataFrame.</li>
+
+                </ul>
+                <h3 id="room-booking">Room Booking</h3>
+                <pre><code class="language-python">
+                def book_room():
+                    print("-"*50)
+                    print("Room Booking\n" + "-"*50)
+                    check_in = input("Enter check-in date (YYYY-MM-DD): ")
+                    check_out = input("Enter check-out date (YYYY-MM-DD): ")
+
+                    room_type = input("Enter preferred room type: ")
+                    num_guests = int(input("Enter number of guests: "))
+
+                    customer_id = int(input("Enter customer ID: "))
+
+                    sql = "INSERT INTO bookings (check_in, check_out, room_type, num_guests, customer_id) VALUES ('{}', '{}', '{}', {}, {})".format(
+                        check_in, check_out, room_type, num_guests, customer_id)
+                    myc.execute(sql)
+                    conn.commit()
+                    print("\nExecution successful. Room booked.")
+                    print("-"*50)
+                                            </code></pre>
+                <ul>
+                <li>Takes user input for room booking details.</li>
+
+                <li>Constructs an SQL query to insert the booking into the 'bookings' table.</li>
+
+                <li>Executes the query and commits the changes.</li>
+
+                </ul>
+                <h3 id="booking-update">Booking Update</h3>
+                <pre><code class="language-python">
+                def update_booking():
+                    print("-"*50)
+                    booking_id = int(input("Enter booking ID to update: "))
+                    new_check_in = input("Enter new check-in date (YYYY-MM-DD): ")
+                    new_check_out = input("Enter new check-out date (YYYY-MM-DD): ")
+                    new_room_type = input("Enter new room type: ")
+                    new_num_guests = int(input("Enter new number of guests: "))
+
+                    sql = "UPDATE bookings SET check_in = '{}', check_out = '{}', room_type = '{}', num_guests = {} WHERE id = {}".format(
+                        new_check_in, new_check_out, new_room_type, new_num_guests, booking_id)
+                    myc.execute(sql)
+                    conn.commit()
+                    print("\nExecution successful. Booking updated.")
+                    print("-"*50)
+                                            </code></pre>
+                <ul>
+                <li>Takes user input for updating booking details.</li>
+
+                <li>Constructs an SQL query to update the booking in the 'bookings' table.</li>
+
+                <li>Executes the query and commits the changes.</li>
+
+                </ul>
+                <h3 id="booking-deletion">Booking Deletion</h3>
+                <pre><code class="language-python">
+                def delete_booking():
+                    print("-"*50)
+                    booking_id = int(input("Enter booking ID to delete: "))
+
+                    sql = "DELETE FROM bookings WHERE id = {}".format(booking_id)
+                    myc.execute(sql)
+                    conn.commit()
+                    print("\nExecution successful. Booking deleted.")
+                    print("-"*50)
+                                            </code></pre>
+                <ul>
+                <li>Takes user input for the booking ID to delete.</li>
+
+                <li>Constructs an SQL query to delete the booking from the 'bookings' table.</li>
+
+                <li>Executes the query and commits the changes.</li>
+
+                </ul>
+                <h3 id="viewing-all-bookings">Viewing All Bookings</h3>
+                <pre><code class="language-python">
+                def view_all_bookings():
+                    print("-"*50)
+                    print("All Bookings\n" + "-"*50)
+
+                    sql = "SELECT * FROM bookings"
+                    myc.execute(sql)
+                    data = myc.fetchall()
+
+                    if not data:
+                        print("No bookings found.")
+                    else:
+                        columns = [i[0] for i in myc.description]
+                        df = pd.DataFrame(data, columns=columns)
+                        print(df)
+
+                    print("-"*50)
+                                            </code></pre>
+                <ul>
+                <li>Fetches all booking records from the 'bookings' table.</li>
+
+                <li>Displays the data using pandas DataFrame.</li>
+
+                </ul>
+                <h3 id="room-occupancy-summary">Room Occupancy Summary</h3>
+                <pre><code class="language-python">
+                def view_room_occupancy():
+                    print("-"*50)
+                    print("Room Occupancy Summary\n" + "-"*50)
+
+                    sql = "SELECT room_type, COUNT(*) FROM bookings GROUP BY room_type"
+                    myc.execute(sql)
+                    data = myc.fetchall()
+
+                    if not data:
+                        print("No bookings found.")
+                    else:
+                        columns = ['Room Type', 'Occupancy']
+                        df = pd.DataFrame(data, columns=columns)
+                        print(df)
+
+                    print("-"*50)
+                                            </code></pre>
+                <ul>
+                <li>Fetches and displays room occupancy summary using pandas DataFrame.</li>
+
+                </ul>
+                <h3 id="calculating-total-revenue">Calculating Total Revenue</h3>
+                <pre><code class="language-python">
+                def calculate_total_revenue():
+                    print("-"*50)
+                    print("Calculating Total Revenue\n" + "-"*50)
+
+                    sql = "SELECT SUM(total_price) FROM bookings"
+                    myc.execute(sql)
+                    total_revenue = myc.fetchone()[0]
+
+                    if total_revenue is None:
+                        total_revenue = 0
+
+                    print(f"Total Revenue: {total_revenue} INR")
+                    print("-"*50)
+                                            </code></pre>
+                <ul>
+                <li>Calculates and prints the total revenue from all bookings.</li>
+
+                </ul>
+                <h3 id="visualizing-room-bookings">Visualizing Room Bookings</h3>
+                <pre><code class="language-python">
+def visualize_bookings():
+    print("-"*50)
+    print("Visualizing Room Bookings\n" + "-"*50)
+
+    sql = "SELECT room_type, COUNT(*) FROM bookings GROUP BY room_type"
+    myc.execute(sql)
+    data = myc.fetchall()
+
+    if not data:
+        print("No bookings found.")
+    else:
+        room_types, counts = zip(*data)
+
+        plt.bar(room_types, counts)
+        plt.xlabel('Room Type')
+        plt.ylabel('Number of Bookings')
+        plt.title('Room Booking Statistics')
+        plt.show()
+
+    print("-"*50)
+                </code></pre>
+                <ul>
+                <li>Fetches data on room bookings.</li>
+
+                <li>Visualizes room bookings using a bar chart with matplotlib.</li>
+
+                </ul>
+                <h3 id="main-function">Main Function</h3>
+                <pre><code class="language-python">def main():
+    create_tables()
+    print("\n" + "-"*50)
+    global conn, myc
+    conn = establish_connection()
+    myc = conn.cursor()
+    o = "y"
+    while o.lower() == "y":
+        print_hotel_details()
+
+        print("\nShortcut Options:\n" + "-"*50)
+        print("X - Exit\nC - Create Customer\nU - Update Customer\nVAC - View All Customers\nB - Book Room\nUAC - Update Booking\nD - Delete Booking\nVAB - View All Bookings\nVR - View Room Occupancy\nG - Visualize Bookings\nTR - Calculate Total Revenue\n" + "-"*50)
+
+        choice = input("Choose an option (C/U/VAC/B/UAC/D/VAB/VR/G/TR/X): ")
+
+        if choice.lower() == "x":
+            exit()
+        elif choice.lower() == "c":
+            create_customer()
+        elif choice.lower() == "u":
+            update_customer()
+        elif choice.lower() == "vac":
+            view_all_customers()
+        elif choice.lower() == "b":
+            book_room()
+        elif choice.lower() == "uac":
+            update_booking()
+        elif choice.lower() == "d":
+            delete_booking()
+        elif choice.lower() == "vab":
+            view_all_bookings()
+        elif choice.lower() == "vr":
+            view_room_occupancy()
+        elif choice.lower() == "g":
+            visualize_bookings()
+        elif choice.lower() == "tr":
+            calculate_total_revenue()
+        else:
+            print("Invalid option. Please choose again.")
+
+        thanks = "\nThank you for choosing Hopiteri : a hotel management software!\n"
+        print(thanks)
+        print("-"*50)
+
+        o = input("Do you want to continue (y/n): ")
+
+if __name__ == "__main__":
+    main()
+                </code></pre>
+                <ul>
+                <li>Calls functions to create tables and establish a connection.</li>
+
+                <li>Enters a loop for user interaction based on menu choices.</li>
+
+                <li>The main function orchestrates the entire flow of Hopiteri.</li>
+
+                </ul>
+                <h2 id="recommendations-for-future-work">Recommendations for Future Work</h2>
+                <p>As with any project, there are opportunities for future enhancements and expansions. Some recommendations for
+                                                future work include:</p>
+                <ol>
+                <li><strong>Enhanced User Interface:</strong> Develop a more visually appealing and intuitive user interface
+                                                    for better user experience.</li>
+
+                <li><strong>Additional Features:</strong> Integrate additional features such as online booking, employee
+                                                    management, and feedback systems to further streamline hotel operations.</li>
+
+                <li><strong>Data Security Measures:</strong> Implement robust data security measures to ensure the protection
+                                                    and privacy of customer information.</li>
+
+                <li><strong>Multi-Platform Compatibility:</strong> Adapt the system for compatibility across various
+                                                    platforms, including web and mobile applications.</li>
+
+                <li><strong>Integration with External Services:</strong> Explore integration possibilities with external
+                                                    services such as payment gateways and third-party APIs to enhance functionality.</li>
+
+                </ol>
+                <p>Continued development and refinement of Hopiteri will contribute to its effectiveness and
+                                                adaptability in the dynamic hospitality industry.</p>
+                <h2 id="conclusion">Conclusion</h2>
+                <p>In conclusion, Hopiteri project provides a comprehensive solution for efficient hotel
+                                                    administration and customer service. By leveraging Python, MySQL, and relevant libraries, the system delivers
+                                                    functionalities ranging from customer management to financial reporting. The user-friendly interface and
+                                                    visualization tools contribute to a seamless hotel management experience.</p>
+                </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer class="wrapper alt" id="footer">
+        <div class="inner">
+            <ul class="menu">
+                <li>© Kartavya. All rights not reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+
+            </ul>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="../IP/assets/js/jquery.min.js"></script>
+    <script src="../IP/assets/project.js"></script>
+    <script src="../IP/assets/js/jquery.scrollex.min.js"></script>
+    <script src="../IP/assets/js/jquery.scrolly.min.js"></script>
+    <script src="../IP/assets/js/browser.min.js"></script>
+    <script src="../IP/assets/js/breakpoints.min.js"></script>
+    <script src="../IP/assets/js/util.js"></script>
+    <script src="../IP/assets/js/main.js"></script>
+</body>
+</html>
