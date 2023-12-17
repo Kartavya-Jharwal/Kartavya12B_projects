@@ -3032,7 +3032,6 @@ input, select, textarea {
 			-ms-justify-content: center;
 			justify-content: center;
 			
-			-ms-flex: 1;
 		}
 
 			.spotlights > section > .content > .inner {
@@ -4209,4 +4208,33 @@ input, select, textarea {
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		transform: scale(1.05);
 	}
+	.toc-listt {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
 	
+	.toc-listt li {
+		margin-bottom: 8px;
+	}
+	
+	.toc-listt a {
+		text-decoration: none;
+		text-transform: capitalize;
+		color: #FF4232; /* Neon purple */
+		padding: 10px;
+		transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+		border-radius: 8px;
+		display: block;
+		font-size: 16px;
+		background-color: #000912; /* Very dark blue */
+		border: 1px solid #000912; /* Matching border color */
+	}
+	
+	.toc-listt a:hover {
+		background-color: #000912; /* Darker blue on hover */
+		color: #88FF32;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transform: scale(1.05);
+	}
