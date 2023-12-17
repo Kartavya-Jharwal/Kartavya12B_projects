@@ -34,7 +34,7 @@ body {
 }
 
 ol, ul {
-	list-style: none;
+	list-style: disc;
 }
 
 blockquote, q {
@@ -2217,11 +2217,12 @@ input, select, textarea {
 
 		.wrapper.style2 {
 			background-color: #83d3c9;
+			font-weight: 400;
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
-			color: #fff;
+			color: #000000;
 		}
 
 			.wrapper.style2 input[type="button"]:hover,
@@ -2250,17 +2251,49 @@ input, select, textarea {
 					border-color: inherit !important;
 					color: #fff !important;
 				}
+		
+		
+
+		.wrapper.style4 {
+			background-color: #A183D3;
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+			background-position: bottom left, bottom right;
+			background-repeat: no-repeat, no-repeat;
+			background-size: 25em, 25em;
+			color: #fff;
+		}
+		.wrapper.style5 {
+			background-color: #B5D383;
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+			background-position: bottom left, bottom right;
+			background-repeat: no-repeat, no-repeat;
+			background-size: 25em, 25em;
+			color: #fff;
+		}
+		.wrapper.style6 {
+			background-color: #D3838D;
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+			background-position: bottom left, bottom right;
+			background-repeat: no-repeat, no-repeat;
+			background-size: 25em, 25em;
+			color: #fff;
+		}
+		.wrapper.style7 {
+			background-color: #D3C983;
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+			background-position: bottom left, bottom right;
+			background-repeat: no-repeat, no-repeat;
+			background-size: 25em, 25em;
+			color: #fff;
+		}
+
 
 		.wrapper.style3 {
 			background: #fff;
 			color: inherit;
 		}
 
-		.wrapper.style4 {
-			background: #fff;
-			color: inherit;
-			padding: 4em;
-		}
+		
 
 /* Header */
 
@@ -2305,7 +2338,7 @@ input, select, textarea {
 	}
 
 	#header {
-		background: #fff;
+		background: #5454540c;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		color: inherit;
 		cursor: default;

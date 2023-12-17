@@ -6,39 +6,32 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" type="image/png" href="/images/6.png">
+		<link rel="shortcut icon" type="image/png" href="../Math/images/6.png">
 	</head>
 	<body class="index is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header" class="alt">
-					<h1 id="logo"><a><span>Kartavya Jharwal</span></a></h1>
+					<h1 id="logo" ><a><span>Kartavya Jharwal</span></a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="#" class="button primary">Download PDF</a></li>
+							<li><a href="../Math/assets/Maths_Project.pdf" class="button primary" download="Kartavya_Jharwal_Modulus_project">⇓ PDF</a></li>
 						</ul>
 					</nav>
 				</header>
 
 			<!-- Banner -->
 				<section id="banner">
-
-					<!--
-						".inner" is set up as an inline-block so it automatically expands
-						in both directions to fit whatever's inside it. This means it won't
-						automatically wrap lines, so be sure to use line breaks where
-						appropriate (<br />).
-					-->
 					<div class="inner">
 
 						<header>
 							<h2>Modular Arithmetic 
 							</br>& Cryptography</h2>
 						</header>
-						<h3>Applied Mathematics (241)</br>Academic year 2023-24</h3>
+						<h2>Applied Mathematics (241)</br>Academic year 2023-24</h3>
 						
-						<p>In this project, I will explore modular arithmetic, covering its core definitions,
+						<p style=" text-align: justify;">In this project, I will explore modular arithmetic, covering its core definitions,
 						</br> historical context, mathematical principles, and practical examples, 
 						</br>followed by a brief overview of its application in cryptography, 
 						</br>concluding with a practical implementation using Excel.
@@ -56,116 +49,87 @@
 			<!-- Main -->
 				<article id="main">
 
-					<header class="special container">
-						<span class="icon solid fa-chart-bar"></span>
-						<h2>As this is my <strong>twentieth</strong> freebie for Kartavya
-						<br />
-						I decided to give it a really creative name.</h2>
-						<p>Turns out <strong>Modular Arithmetic & Cryptography</strong> was the best I could come up with. Anyway, lame name aside,
-						<br />
-						it's minimally designed, fully responsive, built on HTML5/CSS3,
-						and, like all my stuff,
-						<br />
-						released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
-					</header>
-
 					<!-- One -->
 						<section class="wrapper style2 container special-alt">
 							<div class="row gtr-50">
 								<div class="col-8 col-12-narrower">
 
 									<header>
-										<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+										<h2><strong>Introduction</strong></h2>
 									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-									<footer>
-										<ul class="buttons">
-											<li><a href="#" class="button">Find Out More</a></li>
-										</ul>
-									</footer>
+									<p style="text-align: justify;">
+										At its core, modular arithmetic is a unique form of arithmetic intricately connected to remainders. The arithmetic operations within this system are based on the residual values left when integers are divided by a fixed quantity, known as the modulus. In simpler terms, modular arithmetic encapsulates the essence of counting within a cyclic framework, where the remainder after division becomes a central focus.
+
+										<br>The roots of modular arithmetic extend back to ancient civilizations, where early mathematicians grappled with the cyclical nature of time and numerical patterns. The development of modular arithmetic is marked by its application in solving real-world problems related to calendars, timekeeping, and divisibility.
+
+										<br>Carl Friedrich Gauss, a prominent mathematician, notably shaped the modern understanding of modular arithmetic. His seminal work, "Disquisitiones Arithmeticae," published in 1801, emphasized the arithmetic of remainders as a foundational aspect of this mathematical discipline. Today, modular arithmetic is an indispensable tool, seamlessly integrated into various branches of mathematics.
+
+										<br>Beyond its historical significance, modular arithmetic emerges as a versatile tool with applications spanning cryptography, computer science, and beyond. Its distinctive arithmetic, centered around remainders, allows for the simplification of complex computations involving residual values. In subsequent sections, I will unravel the intricacies of modular arithmetic operations, exploring how it harmonizes with fundamental mathematical expressions involving addition, subtraction, multiplication, and division.
+
+									</p>
+									
 
 								</div>
 								<div class="col-4 col-12-narrower imp-narrower">
-
-									<ul class="featured-icons">
-										<li><span class="icon fa-clock"><span class="label">Feature 1</span></span></li>
-										<li><span class="icon solid fa-volume-up"><span class="label">Feature 2</span></span></li>
-										<li><span class="icon solid fa-laptop"><span class="label">Feature 3</span></span></li>
-										<li><span class="icon solid fa-inbox"><span class="label">Feature 4</span></span></li>
-										<li><span class="icon solid fa-lock"><span class="label">Feature 5</span></span></li>
-										<li><span class="icon solid fa-cog"><span class="label">Feature 6</span></span></li>
-									</ul>
+									<h2><strong>Modulus Properties</strong></h2>
+									<ul style="list-style-type:disc;">
+										<br>
+										<li>◈ If  A ≡ B (mod C) then  B ≡ A(mod C)</li>
+										<br>
+										<li>◈ If A ≡ B (mod C) and B ≡ D (mod C) then A ≡ D(mod C)</li>
+										<br>
+										<li>◈ (A + B) mod C = (A mod C + B mod C) mod C
+										</li>
+										<br>
+										<li>◈ (A - B) mod C = (A mod C - B mod C) mod C
+										</li>
+										<br>
+										<li>◈ (A * B) mod C = (A mod C * B mod C) mod C</li>
+										<br>
+										<li>◈ Aᴮ mod C = ( (A mod C)ᴮ ) mod C</li>
+									</ul >
 
 								</div>
 							</div>
 						</section>
 
 					<!-- Two -->
-						<section class="wrapper style1 container special">
-							<div class="row">
-								<div class="col-4 col-12-narrower">
-
-									<section>
-										<span class="icon solid featured fa-check"></span>
-										<header>
-											<h3>This is Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
-								<div class="col-4 col-12-narrower">
-
-									<section>
-										<span class="icon solid featured fa-check"></span>
-										<header>
-											<h3>Also Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
-								<div class="col-4 col-12-narrower">
-
-									<section>
-										<span class="icon solid featured fa-check"></span>
-										<header>
-											<h3>Probably Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div>
-							</div>
-						</section>
-
-					<!-- Three -->
-						<section class="wrapper style3 container special">
-
-							<header class="major">
-								<h2>Next look at this <strong>cool stuff</strong></h2>
+						<section class="wrapper style5 container special" style="color: black;">
+							<header>
+								<h2><strong>Number Theory Applications</strong></h2>
 							</header>
-
+							<p style=" text-align: justify;">Explore practical applications of modular arithmetic in number theory, covering Fermat's Little Theorem, Euler's Totient Function, the Chinese Remainder Theorem, the Möbius Function, and the Divisor Sum Function. These applications showcase the versatility of modular arithmetic, from primality testing to cryptography.
+							</p>
+							
 							<div class="row">
-								<div class="col-6 col-12-narrower">
+								<div class="col-4 col-12-narrower">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 										<header>
-											<h3>A Really Fast Train</h3>
+											<h2>01</h2>
 										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										<p style=" text-align: justify;">Fermat's Little Theorem, a cornerstone of number theory rooted in modular arithmetic, states that if p is a prime number and a is an integer not divisible by p, then a*p−1≡1(mod p). This theorem provides a powerful tool for verifying primality and plays a crucial role in modular exponentiation.</p>
 									</section>
 
 								</div>
-								<div class="col-6 col-12-narrower">
+								<div class="col-4 col-12-narrower">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 										<header>
-											<h3>An Airport Terminal</h3>
+											<h2>02</h2>
 										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										<p style=" text-align: justify;">Euler's Totient Function, denoted as ϕ(n), is intimately connected to modular arithmetic. It calculates the count of positive integers less than n that are coprime to n. Specifically, ϕ(n) is the order of the multiplicative group of integers modulo n, showcasing its inherent link to modular structures.</p>
+									</section>
+
+								</div>
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<header>
+											<h2>03</h2>
+										</header>
+										<p style=" text-align: justify;">The Möbius function, denoted as μ(n), is a number-theoretic function deeply rooted in modular arithmetic. 
+											It is defined as follows: μ(n)=0 if n has a squared prime factor, μ(n)=1 if n is a product of an even number of distinct primes, and μ(n)=−1 if n is a product of an odd number of distinct primes.</p>
 									</section>
 
 								</div>
@@ -174,34 +138,257 @@
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
 										<header>
-											<h3>Hyperspace Travel</h3>
+											<h2>04</h2>
 										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										<p style=" text-align: justify;">The divisor sum function, often denoted as σ(n), involves the summation of all positive divisors of n. Its relationship with modular arithmetic becomes apparent when considering the properties of divisors in the context of modular operations, illustrating how modular arithmetic interfaces with divisor-related functions.</p>
 									</section>
 
 								</div>
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
 										<header>
-											<h3>And Another Train</h3>
+											<h2>05</h2>
 										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										<p style=" text-align: justify;">
+											
+The Chinese Remainder Theorem efficiently solves systems of simultaneous modular congruences with pairwise coprime moduli. Ensuring a unique solution modulo the product of the moduli, it decomposes complex equations into simpler, independent components. This elegant theorem is fundamental in modular arithmetic, offering a concise method for handling intricate systems of equations.</p>
 									</section>
 
 								</div>
+								
 							</div>
-
-							<footer class="major">
-								<ul class="buttons">
-									<li><a href="javascript:void(0)" class="button">THE END</a></li>
-								</ul>
-							</footer>
 						</section>
-						<hr>
+					<!-- Three -->
+					<section class="wrapper style4 container special" style="color: black; text-align: left;">
+						<header>
+							<h2 style="text-align: center;"><strong>Cryptography and Modular Arithmetic
+							</strong></h2>
+							
+						</header>
+						<h3><u><b>Introduction</b></u></h3>
+						<p style=" text-align: justify;">Cryptography, an essential aspect of secure communication, is deeply rooted in mathematical principles, with modular arithmetic serving as a cornerstone in various cryptographic algorithms. One such prominent algorithm is RSA, a widely used public-key cryptosystem known for its robust security features.</p>
+						
+						<h3><u><b>Modular Arithmetic in Cryptography:</b></u></h3>
+					
+						<p style=" text-align: justify;">
+							<u>1. Foundation of Cryptographic Operations:</u>
+							<br>
+							◉ Modular arithmetic lays the foundation for cryptographic operations by introducing the concept of remainders when dividing integers.
+							<br>
+							<br>
+							<u>2. RSA Algorithm Overview:</u>
+							<br>
+							◉ RSA, a public-key cryptosystem, heavily relies on modular arithmetic for secure communication.
+						</p>
+					
+						<h3><u><b>RSA Key Generation:</b></u></h3>
+					
+						<p style=" text-align: justify;">
+							RSA key generation involves meticulous selection to ensure the security of the algorithm.
+							<br>
+							<u>&CirclePlus; Public and Private Key Computation:</u>
+							<br>◉ The totient function φ(N) = (p-1)(q-1) is calculated.
+							<br>◉ A public exponent 'e' is chosen, often a small prime.
+							<br>◉ The private exponent 'd' is computed such that (e * d) ≡ 1 (mod φ(N)).
+							
+						</p>
+						
+						<h3><u><b>Modular Arithmetic in RSA Encryption:</b></u></h3>
+					
+						<p style=" text-align: justify;">
+							<u>1. Plaintext to Numerical Value:</u>
+							<br>
+							◉ The plaintext is converted into a numerical value, M.
+							<br>
+							<u>2. Encryption Process:</u>
+							<br>
+							◉ Cipher text (C) is computed using modular exponentiation: C≡M*e (mod N).
+							<br>
+							<u>3. Clarification in RSA Encryption:</u>
+							<br>
+							◉ Encryption involves raising the plaintext M to the power of the public exponent e and then taking the result modulo N: C≡M*e (mod N).
+						</p>				
+					</section>
+					
+					<section class="wrapper style6 container special" style="color: black; text-align: left;">
+						<header>
+							<h2 style="text-align: center;"><strong>RSA Algorithm and Modular Arithmetic
+							</strong></h2>
+							
+						</header>
+						<h3><u><b>Detailing RSA Key Generation:</b></u></h3>
+						<p style=" text-align: justify;">
+							
+The RSA key generation involves the selection of two large prime numbers, p and q. The product N=p*q forms the modulus for both the public and private keys. Mathematically, this process is represented as:
+<br>N=p*q<br>
+The security of RSA relies on the complexity of factoring N. Larger prime numbers increase the difficulty of this factorization, thus enhancing security. The public key e and private key d are then computed using modular arithmetic:
+<br>e*d≡1(modϕ(N))<br>
+Here, ϕ(N) is Euler's totient function, and  ≡ denotes congruence.	
+						</p>
+						
+						<h3><u><b>Clarification in RSA Encryption and Decryption:</b></u></h3>
+					
+						<p style=" text-align: justify;">
+							
+							<u>RSA Encryption:</u>
+							The encryption process involves raising the plaintext M to the power of the public exponent e and then taking the result modulo N:
+							<br>C≡M*e(modN)<br>
+
+							<u>RSA Decryption:</u>
+							Decryption uses the private exponent d to recover the original plaintext. The ciphertext C is raised to the power of d modulo N:
+							<br>M≡C*d(modN)<br>
+						</p>
+					
+						<h3><u><b>Security and Applications of RSA:</b></u></h3>
+					
+						<p style=" text-align: justify;">
+							
+RSA's security is deeply rooted in modular arithmetic, especially in the context of key length considerations and addressing challenges:
+<br><u>Key Length Considerations:</u>
+The length of N significantly impacts security. A longer N provides resistance against brute-force attacks.
+<br><u>Challenges Over Time:</u>
+Ongoing advancements in computing necessitate adjustments in key length to maintain security standards.
+<br><u>Vulnerabilities and Solutions:</u>
+Historical vulnerabilities, like insufficient randomness in key generation, have been addressed through continuous algorithmic evolution.
+
+						</p>
+						
+						<h3><u><b>Linking Modular Exponentiation to RSA:</b></u></h3>
+					
+						<p style=" text-align: justify;">
+							
+
+The core of RSA encryption and decryption lies in modular exponentiation. <br>For encryption:
+<br>
+C≡M*e(modN)
+<br><br>
+And for decryption:
+<br>M≡C*d(modN)<br>
+This integration with modular arithmetic ensures the security of RSA, creating a formidable mathematical foundation against unauthorized access and information compromise.
+
+						</p>				
+					</section>
+
+					<section class="wrapper style7 container special" style="color: black; text-align: left;">
+						<header>
+							<h2 style="text-align: center;"><strong>Examples
+							</strong></h2>
+							
+						</header>
+						<h3><u><b>Introduction</b></u></h3>
+						<p style=" text-align: justify;">
+							<b>Problem:</b> If it's currently 3 o'clock, what time will it be in 14 hours using a 12-hour clock?
+							<br>
+							<b>Solution:</b> (3+14)mod  12 = 5.(3+14) mod 12=5.
+							So, it will be 5 o'clock.
+
+							<br>
+							<br>
+							<b>Problem:</b> If an event starts at 8:45 and lasts for 2 hours and 30 minutes, what time will it end?
+							<br>
+							<b>Solution:</b>(8×60+45+150)mod  720=375mod  720=375.(8×60+45+150)mod720=375mod720=375.
+							Converting 375 back to hours and minutes, the event will end at 6:15.
+
+							<br>
+							<br>
+							<b>Problem:</b> If today is Tuesday, what day will it be 10 days from now?
+							<br>
+							<b>Solution:</b>(2+10)mod  7=5.(2+10)mod7=5.
+							So, it will be Sunday.
+
+							<br>
+							<br>
+							<b>Problem:</b> If today is Friday, and you want to know the day of the week 25 days from now, what day will it be?
+							<br>
+							<b>Solution:</b>(5+25)mod  7=2.(5+25)mod7=2.
+							So, it will be a Tuesday.
+
+							<br>
+							<br>
+							<b>Problem:</b> Calculate (210)mod  7.
+							<br>
+							<b>Solution:</b> (210)mod  7 = 1024 mod  7 = 3.
+
+							<br>
+							<br>
+							<b>Problem:</b> Find the modular inverse of 9 modulo 26, denoted as 9−1mod  26.
+							<br>
+							<b>Solution:</b>9×3≡1(mod26)
+							So, 9−1mod  26=3.
+
+							<br>
+							<br>
+							<b>Problem:</b> Solve the congruence 3x≡4(mod7).
+							<br>
+							<b>Solution:</b>x≡5(mod7)
+
+							<br>
+							<br>
+							<b>Problem:</b> Solve the system of simultaneous congruences: 
+							x≡2(mod3)   x≡3(mod5)
+							<br>
+							<b>Solution:</b>  x≡8(mod15)
+
+							<br>
+							<br>
+							<b>Problem:</b> In a simplified cryptographic scenario, encrypt a message M=15 using a public exponent e=3 and a modulus N=35.
+							<br>
+							<b>Solution:</b> C≡ Mᵉ mod N=15³ mod 35=15.
+
+	
+						</p>
+										
+					</section>
+					<!-- Four -->
+					<section class="wrapper style3 container special">
+
+						<header class="major">
+							<h2><strong>Image gallery</strong></h2>
+						</header>
+
+						<div class="row">
+							<div class="col-12 col-12-narrower">
+
+								<section>
+									<header>
+										<h2>RSA Encryption process</h2>
+									</header>
+									<a href="javascript:void(0)" class="image featured"><img src="../Math/images/13.png" alt="" /></a>
+								</section>
+
+							</div>
+							<div class="col-12 col-12-narrower">
+
+								<section>
+									<header>
+										<h2>Excel Implementation</h2>
+									</header>
+									<a href="javascript:void(0)" class="image featured"><img src="../Math/images/16.png" alt="" /></a>
+								</section>
+
+							</div>
+
+							<br>
+							<header>
+								<h2><strong>Conclusion</strong></h2>
+							</header>
+							<p style=" text-align: justify;">
+								In conclusion, this project has explored modular arithmetic as a fundamental concept and its crucial role in cryptography. The RSA algorithm served as a practical example, illustrating how modular arithmetic ensures secure communication through key processes.
+<br>
+This exploration highlights the essential nature of modular arithmetic in cryptography, emphasizing its role in securing digital information. The principles discussed lay a solid foundation for advancing and fortifying digital security practices.
+
+							</p>
+						</div>
+
+						<footer class="major">
+							<ul class="buttons">
+								<li><a href="javascript:void(0)" class="button">THE END</a></li>
+							</ul>
+						</footer>
+					</section>
+					<hr>
 
 				</article>
 				<hr>
@@ -216,9 +403,7 @@
 							<section>
 								<div class="custom-footer">
 									<div class="footer-content" style="text-align: center;">
-										<div class="footer-logo">
-											<!-- Add your logo or other branding elements if needed -->
-										</div>
+										
 										<a class="footer-link" href="../index.html" target="_blank" style="text-decoration: none;">PROJECT GALLERY</a>
 										<hr>
 										<!-- Add more links as needed -->
@@ -286,20 +471,20 @@
 						<div class="col-4 col-12-narrower">
 
 							<section>
-								<div class="centered-div">
-									<section class="boxfooter center" style="align-content: center;">
+								<div class="centered-div" >
+									<section class="boxfooter center" style="align-content: center; border-radius:20px">
 										<section>
 											<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0XkcuWNLacWDwEDmvq4CCy?utm_source=generator&theme=0" width="100%" height="153" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 										</section>
 									
 										<ul class="actions" style="justify-content: center;">
-												<li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Question+regarding+your+CBSE+project+showcase!&to=kartavyajharwal@gmail.com&cc=kjisgreatforever@gmail.com&body=Hi%20Kartavya%2C%0A%0AI'm%20writing%20to%20you%20from%20https%3A%2F%2Fkartu-codes.github.io%2FKartavya12B_projects%2F.%20%0A%0AI'm%20interested%20in%20%5Byour%20product%20or%20service%20or%20question%5D.%0A%0AHere%20are%20my%20contact%20details%3A%0A%0AName%3A%20%5BYour%20Name%5D%0AEmail%3A%20%5BYour%20Email%5D%0APhone%3A%20%5BYour%20Phone%20Number%5D%0AI'm%20available%20to%20chat%20at%20%5Byour%20preferred%20time%5D.%0A%0AHere%20are%20my%20questions%20or%20comments%3A%0A%0A%5BYour%20Questions%20or%20Comments%5D%0A%0AThank%20you%20for%20your%20time!%0A%0ASincerely%2C%0A%5BYour%20Name%5D" class="button icon solid fa-envelope" target="_blank" >Mail me</a></li>
+												<li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Question+regarding+your+CBSE+project+showcase!&to=kartavyajharwal@gmail.com&cc=kjisgreatforever@gmail.com&body=Hi%20Kartavya%2C%0A%0AI'm%20writing%20to%20you%20from%20https%3A%2F%2Fkartu-codes.github.io%2FKartavya12B_projects%2F.%20%0A%0AI'm%20interested%20in%20%5Byour%20product%20or%20service%20or%20question%5D.%0A%0AHere%20are%20my%20contact%20details%3A%0A%0AName%3A%20%5BYour%20Name%5D%0AEmail%3A%20%5BYour%20Email%5D%0APhone%3A%20%5BYour%20Phone%20Number%5D%0AI'm%20available%20to%20chat%20at%20%5Byour%20preferred%20time%5D.%0A%0AHere%20are%20my%20questions%20or%20comments%3A%0A%0A%5BYour%20Questions%20or%20Comments%5D%0A%0AThank%20you%20for%20your%20time!%0A%0ASincerely%2C%0A%5BYour%20Name%5D" class="button icon solid fa-envelope" target="_blank" style="align-content: center; border-radius:20px">Mail me</a></li>
 										</ul>
 										<ul class="actions" style="justify-content: center;">
-												<li><a href="https://t.me/Kartavya_jharwal" class="button icon solid fa-paper-plane" target="_blank" >Telegram</a></li>
+												<li><a href="https://t.me/Kartavya_jharwal" class="button icon solid fa-paper-plane" target="_blank" style="align-content: center; border-radius:20px">Telegram</a></li>
 										</ul>		
 										<ul class="actions" style="justify-content: center;">
-												<li><a href="https://www.linkedin.com/in/kartavyajharwal/" class="button icon solid fa-user-tie" target="_blank" >Linkedin</a></li>
+												<li><a href="https://www.linkedin.com/in/kartavyajharwal/" class="button icon solid fa-user-tie" target="_blank" style="align-content: center; border-radius:20px">Linkedin</a></li>
 										</ul>
 										<br>
 										
